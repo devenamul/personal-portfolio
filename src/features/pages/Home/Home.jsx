@@ -50,21 +50,21 @@ const Home = () => {
                         <div className="col-lg-7 col-md-7 mb-15">
                         <div className="tp-home-project-wrap bg-position tp-round-10 h-100" style={{ backgroundImage: "url('/img/project/bg.jpg')" }}>
                               <div className="tp-home-project-contect">
-                                 <a href="portfolio-details.html" className="tp-home-project-icon mb-15">
+                                 <a href="/portfolio" className="tp-home-project-icon mb-15">
                                     <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                  </a>
-                                 <h2 className="tp-home-title fw-500 tp-text-common-white"><a className="underline-white" href="portfolio-details.html">Portfolio</a></h2>
+                                 <h2 className="tp-home-title fw-500 tp-text-common-white"><a className="underline-white" href="/portfolio">Portfolio</a></h2>
                               </div>
                            </div>
                         </div>
                         <div className="col-lg-5 col-md-5 mb-15">
                            <div className="tp-home-resorces-wrap bg-position tp-round-10 h-100" data-background="/img/resorces/bg.jpg">
                               <span className="tp-home-subtitle mb-15">RESORCES</span>
-                              <h2 className="tp-home-title fw-500 tp-text-common-white mb-60"><a className="underline-white" href="service.html">Tools to accelerate<br/> your workflow.</a></h2>
-                              <a href="service.html"><img src="/img/resorces/icon.png" alt=""/></a>
+                              <h2 className="tp-home-title fw-500 tp-text-common-white mb-60"><a className="underline-white" href="/service">Tools to accelerate<br/> your workflow.</a></h2>
+                              <a href="/service"><img src="/img/resorces/icon.png" alt=""/></a>
                            </div>
                         </div>
                      </div>
@@ -76,7 +76,7 @@ const Home = () => {
                               <span className="tp-home-subtitle d-block text-end mb-40">ABOUT</span>
                               <h2 className="tp-home-title fw-500 tp-text-common-white mb-25">Focused on impactful design and innovation solutions<br/>
                                  solving problems.</h2>
-                              <a className="tp-home-btn underline-green" href="about.html">Read more about</a>
+                              <a className="tp-home-btn underline-green" href="/about">Read more about</a>
                            </div>
                         </div>
                         <div className="col-xl-3 col-lg-5 col-md-5 mb-15">
@@ -84,7 +84,7 @@ const Home = () => {
                               <div className="text-center mb-40">
                                  <img src="/img/blog/blog.png" alt=""/>
                               </div>
-                              <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="blog.html">Tesla net worth</a></h2>
+                              <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="/blog">Tesla net worth</a></h2>
                               <span className="tp-home-subtitle">BLOG</span>
                            </div>
                         </div>
@@ -360,28 +360,28 @@ const Home = () => {
                               <div className="swiper-slide">
                                  <div className="tp-home-service-item">
                                     <span className="tp-home-subtitle mb-25">SERVICE 01</span>
-                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="service.html">Full Stack Web Development-</a></h2>
+                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="/service">Full Stack Web Development-</a></h2>
                                     <p>Developing end-to-end web applications using React.js, Node.js, Express.js, MongoDB, and MySQL.</p>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-service-item">
                                     <span className="tp-home-subtitle mb-25">SERVICE 02</span>
-                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="service.html">Frontend Development –</a></h2>
+                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="/service">Frontend Development –</a></h2>
                                     <p>Creating responsive and user-friendly interfaces using HTML, CSS, Bootstrap, Tailwind CSS, JavaScript, jQuery, React and Next </p>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-service-item">
                                     <span className="tp-home-subtitle mb-25">SERVICE 03</span>
-                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="service.html">Backend Development –</a></h2>
+                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="/service">Backend Development –</a></h2>
                                     <p>Building scalable and secure APIs and server-side logic using Node.js, Express.js, and integrating with various databases.</p>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-service-item">
                                     <span className="tp-home-subtitle mb-25">SERVICE 04</span>
-                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="service.html">Apps Development – </a></h2>
+                                    <h2 className="tp-home-title fw-500 tp-text-common-white mb-10"><a className="underline-white" href="/service">Apps Development – </a></h2>
                                     <p> Developing cross-platform mobile applications using React Native, ensuring smooth performance and native feel.</p>
                                  </div>
                               </div>
@@ -395,7 +395,7 @@ const Home = () => {
                        <span className="tp-home-contact-shape p-absolute"></span>
                        <span className="tp-home-contact-shape-2 p-absolute"></span>
                         <h2 className="tp-home-contact-title mb-25 p-relative z-index-1">Let’s work with <span>together</span></h2>
-                        <a href="contact.html" className="tp-home-project-icon p-relative z-index-1">
+                        <a href="/contact" className="tp-home-project-icon p-relative z-index-1">
                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                               <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

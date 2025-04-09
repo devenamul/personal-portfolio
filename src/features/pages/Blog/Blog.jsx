@@ -14,7 +14,7 @@ const Blog = () => {
          <div className="tp-offcanvas-wrapper">
             <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
                <div className="tp-offcanvas-logo">
-                  <a href="index.html">
+                  <a href="/">
                      <img data-width="98" src="/img/logo/logo-white.png" alt=""/>
                   </a>
                </div>
@@ -103,19 +103,19 @@ const Blog = () => {
                   <div className="row align-items-center">
                      <div className="col-4 col-xl-2">
                         <div className="tp-header-logo">
-                           <a href="index.html"><img src="/img/logo/logo-white.png" alt=""/></a>
+                           <a href="/"><img src="/img/logo/logo-white.png" alt=""/></a>
                         </div>
                      </div>
                      <div className="col-lg-6 d-none d-xl-block">
                         <div className="tp-main-menu">
                            <nav className="tp-mobile-menu-active">
                               <ul>
-                                 <li className="index.html"><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
-                                 <li><a href="service.html">Service</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="portfolio-details.html">Portfolio</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
+                                 <li className="/"><a href="/">Home</a></li>
+                                 <li><a href="/about">About</a></li>
+                                 <li><a href="/service">Service</a></li>
+                                 <li><a href="/blog">Blog</a></li>
+                                 <li><a href="/portfolio">Portfolio</a></li>
+                                 <li><a href="/contact">Contact</a></li>
                                  <li className="signIn-signUp-offcanvas-btn"><a href="#">SignIn/SignUp</a></li>
                               </ul>
                            </nav>
@@ -123,7 +123,7 @@ const Blog = () => {
                      </div>
                      <div className="col-8 col-xl-4">
                         <div className="tp-header-btn text-end">
-                           <a className="tp-btn d-none d-sm-inline-block" href="contact.html">SignIn/SignUp</a>
+                           <a className="tp-btn d-none d-sm-inline-block" href="/contact">SignIn/SignUp</a>
                            <button className="tp-header-bar tp-offcanvas-open-btn d-xl-none ml-10">
                               <span>
                                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -14,7 +14,7 @@ const Service = () => {
          <div className="tp-offcanvas-wrapper">
             <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
                <div className="tp-offcanvas-logo">
-                  <a href="index.html">
+                  <a href="/">
                      <img data-width="98" src="/img/logo/logo-white.png" alt=""/>
                   </a>
                </div>
@@ -103,19 +103,19 @@ const Service = () => {
                   <div className="row align-items-center">
                      <div className="col-4 col-xl-2">
                         <div className="tp-header-logo">
-                           <a href="index.html"><img src="/img/logo/logo-white.png" alt=""/></a>
+                           <a href="/"><img src="/img/logo/logo-white.png" alt=""/></a>
                         </div>
                      </div>
                      <div className="col-lg-6 d-none d-xl-block">
                         <div className="tp-main-menu">
                            <nav className="tp-mobile-menu-active">
                               <ul>
-                                 <li className="index.html"><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
-                                 <li><a href="service.html">Service</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="portfolio-details.html">Portfolio</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
+                                 <li className="/"><a href="/">Home</a></li>
+                                 <li><a href="/about">About</a></li>
+                                 <li><a href="/service">Service</a></li>
+                                 <li><a href="/blog">Blog</a></li>
+                                 <li><a href="/portfolio">Portfolio</a></li>
+                                 <li><a href="/contact">Contact</a></li>
                                  <li className="signIn-signUp-offcanvas-btn"><a href="#">SignIn/SignUp</a></li>
                               </ul>
                            </nav>
@@ -123,7 +123,7 @@ const Service = () => {
                      </div>
                      <div className="col-8 col-xl-4">
                         <div className="tp-header-btn text-end">
-                           <a className="tp-btn d-none d-sm-inline-block" href="contact.html">SignIn/SignUp</a>
+                           <a className="tp-btn d-none d-sm-inline-block" href="/contact">SignIn/SignUp</a>
                            <button className="tp-header-bar tp-offcanvas-open-btn d-xl-none ml-10">
                               <span>
                                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +231,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Custom Web Development</a>
+                                 <a className="tp-service-link underline-white" href="/service">Custom Web Development</a>
                               </div>
                               <div className="tp-service-body">
                                  <p>I provide fully customized web development solutions tailored to your needs. Whether it's a personal website, business platform, or e-commerce store, I use modern technologies like HTML, CSS, JavaScript, React, and Next.js to build fast, responsive, and user-friendly websites. From frontend to backend, I create secure, scalable, and optimized solutions to help businesses grow online.</p>
@@ -241,7 +241,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Full Stack Development</a>
+                                 <a className="tp-service-link underline-white" href="/service">Full Stack Development</a>
                               </div>
                               <div className="tp-service-body">
                                  <p>I offer complete full-stack development with React, Node.js, Express.js, and MongoDB. From UI/UX to backend and database management, I create scalable, secure, and high-performance web apps. I integrate APIs, authentication, and real-time features for a seamless user experience. My responsive, SEO-friendly designs help businesses grow with dynamic and engaging applications</p>
@@ -251,7 +251,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Frontend Development</a>
+                                 <a className="tp-service-link underline-white" href="/service">Frontend Development</a>
                               </div>
                               <div className="tp-service-body">
                                  <p>I craft stunning, interactive, and user-friendly frontend designs using HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. With expertise in React and Next.js, I build high-performance, SEO-friendly interfaces optimized for all devices. Prioritizing speed, accessibility, and seamless UX, I create sleek, responsive designs that enhance brand identity <br/> and boost engagement. Let’s make your web presence stand out! </p>
@@ -261,7 +261,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Backend Development</a>
+                                 <a className="tp-service-link underline-white" href="/service">Backend Development</a>
                               </div>
                               <div className="tp-service-body">
                                  <p>I build robust and scalable backend solutions using Node.js, Express.js, and MySQL/MongoDB. My expertise includes API development, authentication, database management, and real-time data processing. I create secure, high-performance backends for e-commerce, CMS, and complex apps. With RESTful APIs and third-party integrations, I ensure efficiency, security, and scalability for your business needs.</p>
@@ -271,7 +271,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Website Optimization & SEO</a>
+                                 <a className="tp-service-link underline-white" href="/service">Website Optimization & SEO</a>
                               </div>
                               <div className="tp-service-body">
                             
@@ -283,7 +283,7 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-12 mb-25">
                            <div className="tp-service-wrap">
                               <div className="tp-service-top mb-30">
-                                 <a className="tp-service-link underline-white" href="service.html">Apps development</a>
+                                 <a className="tp-service-link underline-white" href="/service">Apps development</a>
                               </div>
                               <div className="tp-service-body">
                               
@@ -296,7 +296,7 @@ const Service = () => {
                   </div>
                   <div className="col-lg-12">
                      <div className="tp-about-contact-wrap text-center tp-round-4 mb-85">
-                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="contact.html">Let’s work with <span>together 👋</span></a></h3>
+                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="/contact">Let’s work with <span>together 👋</span></a></h3>
                      </div>
                      <div className="tp-home-2-copyright tp-about-contact-copyright text-center pb-25">
                         <p>© 2025 All rights reserved by  <a href="#">Eng. Enamul</a></p>

@@ -14,7 +14,7 @@ const About = () => {
          <div className="tp-offcanvas-wrapper">
             <div className="tp-offcanvas-top d-flex align-items-center justify-content-between">
                <div className="tp-offcanvas-logo">
-                  <a href="index.html">
+                  <a href="/">
                      <img data-width="98" src="/img/logo/logo-white.png" alt=""/>
                   </a>
                </div>
@@ -103,19 +103,19 @@ const About = () => {
                   <div className="row align-items-center">
                      <div className="col-4 col-xl-2">
                         <div className="tp-header-logo">
-                           <a href="index.html"><img src="/img/logo/logo-white.png" alt=""/></a>
+                           <a href="/"><img src="/img/logo/logo-white.png" alt=""/></a>
                         </div>
                      </div>
                      <div className="col-lg-6 d-none d-xl-block">
                         <div className="tp-main-menu">
                            <nav className="tp-mobile-menu-active">
                               <ul>
-                                 <li className="index.html"><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
-                                 <li><a href="service.html">Service</a></li>
-                                 <li><a href="blog.html">Blog</a></li>
-                                 <li><a href="portfolio-details.html">Portfolio</a></li>
-                                 <li><a href="contact.html">Contact</a></li>
+                                 <li className="/"><a href="/">Home</a></li>
+                                 <li><a href="/about">About</a></li>
+                                 <li><a href="/service">Service</a></li>
+                                 <li><a href="/blog">Blog</a></li>
+                                 <li><a href="/portfolio">Portfolio</a></li>
+                                 <li><a href="/contact">Contact</a></li>
                                  <li className="signIn-signUp-offcanvas-btn"><a href="#">SignIn/SignUp</a></li>
                               </ul>
                            </nav>
@@ -123,7 +123,7 @@ const About = () => {
                      </div>
                      <div className="col-8 col-xl-4">
                         <div className="tp-header-btn text-end">
-                           <a className="tp-btn d-none d-sm-inline-block" href="contact.html">SignIn/SignUp</a>
+                           <a className="tp-btn d-none d-sm-inline-block" href="/contact">SignIn/SignUp</a>
                            <button className="tp-header-bar tp-offcanvas-open-btn d-xl-none ml-10">
                               <span>
                                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,37 +203,37 @@ const About = () => {
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
+                                    <a href="/portfolio" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
+                                    <a href="/portfolio" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
+                                    <a href="/portfolio" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
                                  </div>
                               </div>
                            </div>
@@ -438,7 +438,7 @@ const About = () => {
                   </div>
                   <div className="col-lg-12">
                      <div className="tp-about-contact-wrap text-center tp-round-4 mb-85">
-                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="contact.html">Let’s work with <span>together 👋</span></a></h3>
+                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="/contact">Let’s work with <span>together 👋</span></a></h3>
                      </div>
                      <div className="tp-home-2-copyright tp-about-contact-copyright text-center pb-25">
                         <p>© 2025 All rights reserved by  <a href="#">Eng. Enamul</a></p>
