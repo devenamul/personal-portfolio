@@ -1,13 +1,16 @@
+import dotenv from "dotenv"
+dotenv.config();
 import express from "express"
-
-
+import colors from "colors"
+import cors from "cors"
+import mongoDBConnect from "./config/db.js"
+import adminRoute from './routes/adminRoute.js'
 
 
 // init expres 
 const app = express()
 
 // ecvironment variable
-dotenv.config();
 const PORT = process.env.PORT || 9090;
 
 //middleware
@@ -17,7 +20,10 @@ app.use(cors())
 
 
 //set static
-app.use(express.static("api/public"))
+app.use(express.static("public"))
+
+//routes
+app.use(adminRoute)
 
 
 
