@@ -1,7 +1,11 @@
-
+import './About.css'
 import Footer from '../../compnent/Footer/Footer'
 import Header from '../../compnent/Header/Header'
 import Loader from '../../compnent/Loder/Loader'
+
+
+
+
 import './About.css'
 const About = () => {
   return (
@@ -11,6 +15,8 @@ const About = () => {
       <Header/>
 
       <main>
+         
+      
          <div className="tp-home-area tp-about-wrap tp-about-spacing">
             <div className="container">
                <div className="row gx-24">
@@ -69,37 +75,37 @@ const About = () => {
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="/portfolio" className="tp-home-2-project-icon">
+                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="/portfolio" className="tp-home-2-project-icon">
+                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
                                  </div>
                               </div>
                               <div className="swiper-slide">
                                  <div className="tp-home-2-project-item p-relative">
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
-                                    <a href="/portfolio" className="tp-home-2-project-icon">
+                                    <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                           <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        </svg>
                                     </a>
-                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="/portfolio">See More</a></h2>
+                                    <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
                                  </div>
                               </div>
                            </div>
@@ -304,9 +310,9 @@ const About = () => {
                   </div>
                   <div className="col-lg-12">
                      <div className="tp-about-contact-wrap text-center tp-round-4 mb-85">
-                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="/contact">Let’s work with <span>together 👋</span></a></h3>
+                        <h3 className="tp-about-contact-title tp-home-contact-title"><a href="contact.html">Let’s work with <span>together 👋</span></a></h3>
                      </div>
-                    <Footer/>
+                     <Footer/>
                   </div>
                </div>
             </div>
