@@ -13,10 +13,10 @@ const Header = () => {
                <div className="tp-offcanvas-close">
                   <button className="tp-offcanvas-close-btn">
                      <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5"
-                           stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5"
-                           stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" strokeWidth="1.5"
+                           strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" strokeWidth="1.5"
+                           strokeLinecap="round" strokeLinejoin="round" />
                      </svg>
                   </button>
                </div>
@@ -66,9 +66,9 @@ const Header = () => {
                      <li>
                         <a href="https://www.linkedin.com/in/enamulsarder-full-stack-webseveloper/" target="_blank" rel="noopener noreferrer"className="tp-home-social-icon">
                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="11" cy="11" r="10" stroke="#D2D2D2" stroke-width="1.4" />
-                              <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <circle cx="11" cy="11" r="10" stroke="#D2D2D2" strokeWidth="1.4" />
+                              <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                              <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                               <circle cx="8.75" cy="6.75" r="0.75" fill="#D2D2D2"/>
                             </svg>
                         </a>
@@ -119,10 +119,10 @@ const Header = () => {
                            <button className="tp-header-bar tp-offcanvas-open-btn d-xl-none ml-10">
                               <span>
                                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21.8808 10.2976H3.8808" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M21.8808 6.29756H3.8808" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M21.8808 14.2976H3.8808" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M21.8808 18.2976H3.8808" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M21.8808 10.2976H3.8808" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M21.8808 6.29756H3.8808" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M21.8808 14.2976H3.8808" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                    <path d="M21.8808 18.2976H3.8808" stroke="currentcolor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                  </svg>
                               </span>
                            </button>

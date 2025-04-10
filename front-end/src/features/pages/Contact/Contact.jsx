@@ -1,8 +1,42 @@
+import { useState } from "react"
 import Footer from "../../compnent/Footer/Footer"
 import Header from "../../compnent/Header/Header"
 import Loader from "../../compnent/Loder/Loader"
 import "./Contact.css"
+import { useDispatch, useSelector } from "react-redux"
+import { createContactData } from "./contactApi"
+import { getAllContactData } from "./ContactSlice"
 const Contact = () => {
+  
+     // dispatch data
+     const dispatch = useDispatch()
+    // get selector data
+    const {contacts, message} = useSelector(getAllContactData)  
+ 
+   // useState for input data
+    const [input, setInput]= useState({
+      firstName:"", 
+      lastName:"", 
+      email:"", 
+      phone:"", 
+      subject:'',
+      message:"" 
+    })
+
+    // handel input change
+    const handelInputChange =(e)=>{
+      setInput((prevState) => ({
+         ...prevState,
+         [e.target.name]: e.target.value
+     }));
+    }
+
+    // submit form data data
+    const handleContactCreate =(e)=>{
+      e.preventDefault();
+      dispatch(createContactData(input))
+    }
+
   return (
     <>
            
@@ -14,11 +48,11 @@ const Contact = () => {
          <div className="tp-home-svg-shape">
             <svg width="1920" height="779" viewBox="0 0 1920 779" fill="none" xmlns="http://www.w3.org/2000/svg">
                <g filter="url(#filter0_f_27_375)">
-                 <path className="line-1" d="M2087 308.5C1974 236.833 1691.4 145.6 1465 354C1182 614.5 1965.5 427.5 1556 207.5C1146.5 -12.5 788 331 762.5 490.5C737 650 1354.5 230 671.5 184.5C-11.5 139 381 -17.5 588 83.5C795 184.5 286.5 834 -62 543.5C-410.5 253 492 414.5 176 905" stroke="white" stroke-opacity="0.06" stroke-width="40" />
+                 <path className="line-1" d="M2087 308.5C1974 236.833 1691.4 145.6 1465 354C1182 614.5 1965.5 427.5 1556 207.5C1146.5 -12.5 788 331 762.5 490.5C737 650 1354.5 230 671.5 184.5C-11.5 139 381 -17.5 588 83.5C795 184.5 286.5 834 -62 543.5C-410.5 253 492 414.5 176 905" stroke="white" strokeOpacity="0.06" strokeWidth="40" />
                </g>
                <defs>
-                 <filter id="filter0_f_27_375" x="-193.436" y="0.173615" width="2321.15" height="945.658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                 <filter id="filter0_f_27_375" x="-193.436" y="0.173615" width="2321.15" height="945.658" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                   <feFlood floodOpacity="0" result="BackgroundImageFix" />
                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                    <feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_27_375" />
                  </filter>
@@ -58,9 +92,9 @@ const Contact = () => {
                               </a>
                               <a href="https://www.linkedin.com/in/enamulsarder-full-stack-webseveloper/" target="_blank" rel="noopener noreferrer"className="tp-home-social-icon">
                                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="11" cy="11" r="10" stroke="#D2D2D2" stroke-width="1.4" />
-                                    <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="11" cy="11" r="10" stroke="#D2D2D2" strokeWidth="1.4" />
+                                    <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                                    <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                                     <circle cx="8.75" cy="6.75" r="0.75" fill="#D2D2D2"/>
                                   </svg>
                               </a>
@@ -98,37 +132,37 @@ const Contact = () => {
                   <div className="col-xl-8 col-lg-7">
                      <div className="tp-contact-form-wrap tp-contact-form-main-wrap">
                         <h3 className="tp-contact-form-main-title mb-40">Let’s work with <span>together 👋</span></h3>
-                        <form id="contact-form" action="https://html.hixstudio.net/heiko-prev/heiko/assets/mail.php" method="POST">
+                        <form onSubmit={handleContactCreate}>
                            <div className="tp-contact-form-input">
                               <div className="row">
                                  <div className="col-md-6">
                                     <div className="mb-15">
-                                       <input name="name" className="input" type="text" placeholder="First name*"/>
+                                       <input name="firstName" value={input.firstName} onChange={handelInputChange} className="input" type="text" placeholder="First name*"/>
                                     </div>
                                  </div>
                                  <div className="col-md-6">
                                     <div className="mb-15">
-                                       <input name="l_name" className="input" type="text" placeholder="Last name*"/>
+                                       <input name="lastName" value={input.lastName} onChange={handelInputChange} className="input" type="text" placeholder="Last name*"/>
                                     </div>
                                  </div>
                                  <div className="col-md-6">
                                     <div className="mb-15">
-                                       <input name="email" className="input" type="email" placeholder="heiko@mail.com"/>
+                                       <input name="email" value={input.email} onChange={handelInputChange} className="input" type="email" placeholder="heiko@mail.com"/>
                                     </div>
                                  </div>
                                  <div className="col-md-6">
                                     <div className="mb-15">
-                                       <input name="phone" className="input" type="text" placeholder="Phone number"/>
+                                       <input name="phone" value={input.phone} onChange={handelInputChange} className="input" type="text" placeholder="Phone number"/>
                                     </div>
                                  </div>
                                  <div className="col-12">
                                     <div className="mb-15">
-                                       <input  name="subject" className="input" type="text" placeholder="Enter subject"/>
+                                       <input  name="subject" value={input.subject} onChange={handelInputChange} className="input" type="text" placeholder="Enter subject"/>
                                     </div>
                                  </div>
                                  <div className="col-12">
                                     <div className="mb-15 lh-1">
-                                       <textarea  name="message" className="input textarea" placeholder="Write your message"></textarea>
+                                       <textarea  name="message" value={input.message} onChange={handelInputChange} className="input textarea" placeholder="Write your message"></textarea>
                                     </div>
                                  </div>
                                  <div className="col-12">

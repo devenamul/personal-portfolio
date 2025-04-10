@@ -77,8 +77,8 @@ const About = () => {
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
                                     <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                          <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                          <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                        </svg>
                                     </a>
                                     <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
@@ -89,8 +89,8 @@ const About = () => {
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
                                     <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                          <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                          <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                        </svg>
                                     </a>
                                     <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
@@ -101,8 +101,8 @@ const About = () => {
                                     <img className="w-100 tp-round-4" src="/img/project/project-2/project.jpg" alt=""/>
                                     <a href="portfolio-details.html" className="tp-home-2-project-icon">
                                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                          <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                          <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                        </svg>
                                     </a>
                                     <h2 className="tp-home-2-project-title p-absolute"><a className="underline-white" href="portfolio-details.html">See More</a></h2>
@@ -171,9 +171,9 @@ const About = () => {
                            </a>
                            <a href="https://www.linkedin.com/in/enamulsarder-full-stack-webseveloper/" target="_blank" rel="noopener noreferrer"className="tp-home-social-icon">
                               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <circle cx="11" cy="11" r="10" stroke="#D2D2D2" stroke-width="1.4" />
-                                 <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                 <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                 <circle cx="11" cy="11" r="10" stroke="#D2D2D2" strokeWidth="1.4" />
+                                 <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                                 <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                                  <circle cx="8.75" cy="6.75" r="0.75" fill="#D2D2D2"/>
                                </svg>
                            </a>
@@ -201,8 +201,8 @@ const About = () => {
                                     View
                                     <span>
                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M6.8667 1L11 5.00003L6.8667 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                          <path d="M1 4.99902H11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M6.8667 1L11 5.00003L6.8667 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                          <path d="M1 4.99902H11" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
                                        </svg>
                                     </span>
                                  </a>
@@ -210,8 +210,8 @@ const About = () => {
                                     Download
                                     <span>
                                        <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M6.8667 1L11 5.00003L6.8667 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                          <path d="M1 4.99902H11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M6.8667 1L11 5.00003L6.8667 9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                                          <path d="M1 4.99902H11" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
                                        </svg>
                                     </span>
                                  </a>

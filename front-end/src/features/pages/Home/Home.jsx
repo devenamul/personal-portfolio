@@ -15,11 +15,11 @@ const Home = () => {
             <div className="tp-home-svg-shape">
                <svg width="1920" height="779" viewBox="0 0 1920 779" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g filter="url(#filter0_f_27_375)">
-                     <path className="line-1" d="M2087 308.5C1974 236.833 1691.4 145.6 1465 354C1182 614.5 1965.5 427.5 1556 207.5C1146.5 -12.5 788 331 762.5 490.5C737 650 1354.5 230 671.5 184.5C-11.5 139 381 -17.5 588 83.5C795 184.5 286.5 834 -62 543.5C-410.5 253 492 414.5 176 905" stroke="white" stroke-opacity="0.06" stroke-width="40" />
+                     <path className="line-1" d="M2087 308.5C1974 236.833 1691.4 145.6 1465 354C1182 614.5 1965.5 427.5 1556 207.5C1146.5 -12.5 788 331 762.5 490.5C737 650 1354.5 230 671.5 184.5C-11.5 139 381 -17.5 588 83.5C795 184.5 286.5 834 -62 543.5C-410.5 253 492 414.5 176 905" stroke="white" strokeOpacity="0.06" strokeWidth="40" />
                   </g>
                   <defs>
-                     <filter id="filter0_f_27_375" x="-193.436" y="0.173615" width="2321.15" height="945.658" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                     <filter id="filter0_f_27_375" x="-193.436" y="0.173615" width="2321.15" height="945.658" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                         <feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_27_375" />
                      </filter>
@@ -52,8 +52,8 @@ const Home = () => {
                               <div className="tp-home-project-contect">
                                  <a href="/portfolio" className="tp-home-project-icon mb-15">
                                     <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                       <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                       <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                       <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                  </a>
                                  <h2 className="tp-home-title fw-500 tp-text-common-white"><a className="underline-white" href="/portfolio">Portfolio</a></h2>
@@ -125,8 +125,8 @@ const Home = () => {
                                  <a className="tp-home-social-icon-wrap p-relative" href="https://wa.me/8801960233363?text=Hello%20Enamul%2C%20I%20visited%20your%20website." target="_blank" rel="noopener noreferrer">
                                     <span className="tp-home-social-icon">
                                        <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <path d="M16.001 2.667C8.64 2.667 2.667 8.64 2.667 16.001C2.667 18.999 3.679 21.76 5.396 24.005L4 29.333L9.452 27.986C11.612 29.313 13.967 29.999 16.001 29.999C23.361 29.999 29.333 24.027 29.333 16.666C29.333 9.306 23.361 2.667 16.001 2.667Z" stroke="#D2D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                          <path d="M11.2 12.267C11.6 13.534 12.4 15.067 13.6 16.267C14.8 17.467 16.4 18.267 17.6 18.667C18.4 18.934 19.067 18.667 19.6 18.267L20.4 17.6C20.667 17.334 20.667 16.934 20.267 16.667L18.933 15.867C18.533 15.6 18.267 15.734 17.867 16.134L17.467 16.534C17.334 16.667 17.067 16.667 16.8 16.534C16 16.134 14.933 15.333 14.267 14.267C14 13.867 14 13.6 14.133 13.467L14.533 13.067C14.933 12.667 15.067 12.4 14.8 12L14 10.667C13.733 10.267 13.333 10.267 13.067 10.4L12.267 10.933C11.867 11.333 11.067 11.6 11.2 12.267Z" stroke="#D2D2D2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M16.001 2.667C8.64 2.667 2.667 8.64 2.667 16.001C2.667 18.999 3.679 21.76 5.396 24.005L4 29.333L9.452 27.986C11.612 29.313 13.967 29.999 16.001 29.999C23.361 29.999 29.333 24.027 29.333 16.666C29.333 9.306 23.361 2.667 16.001 2.667Z" stroke="#D2D2D2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                          <path d="M11.2 12.267C11.6 13.534 12.4 15.067 13.6 16.267C14.8 17.467 16.4 18.267 17.6 18.667C18.4 18.934 19.067 18.667 19.6 18.267L20.4 17.6C20.667 17.334 20.667 16.934 20.267 16.667L18.933 15.867C18.533 15.6 18.267 15.734 17.867 16.134L17.467 16.534C17.334 16.667 17.067 16.667 16.8 16.534C16 16.134 14.933 15.333 14.267 14.267C14 13.867 14 13.6 14.133 13.467L14.533 13.067C14.933 12.667 15.067 12.4 14.8 12L14 10.667C13.733 10.267 13.333 10.267 13.067 10.4L12.267 10.933C11.867 11.333 11.067 11.6 11.2 12.267Z" stroke="#D2D2D2" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                                         </svg>
                                     </span>
                                     <div className="tp-home-social-content d-flex">
@@ -176,9 +176,9 @@ const Home = () => {
                                  <a className="tp-home-social-icon-wrap p-relative"  href="https://www.linkedin.com/in/enamulsarder-full-stack-webseveloper/" target="_blank" rel="noopener noreferrer" >
                                     <span className="tp-home-social-icon">
                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                          <circle cx="11" cy="11" r="10" stroke="#D2D2D2" stroke-width="1.4" />
-                                          <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                          <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <circle cx="11" cy="11" r="10" stroke="#D2D2D2" strokeWidth="1.4" />
+                                          <path d="M8 8.5C8 8.22386 8.22386 8 8.5 8H9.5C9.77614 8 10 8.22386 10 8.5V13.5C10 13.7761 9.77614 14 9.5 14H8.5C8.22386 14 8 13.7761 8 13.5V8.5Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+                                          <path d="M12 10C12 9.44772 12.4477 9 13 9H13.5C14.3284 9 15 9.67157 15 10.5V13.5C15 13.7761 14.7761 14 14.5 14H13.5C13.2239 14 13 13.7761 13 13.5V11.5C13 11.2239 12.7761 11 12.5 11H12C12 11 12 10.5 12 10Z" stroke="#D2D2D2" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
                                           <circle cx="8.75" cy="6.75" r="0.75" fill="#D2D2D2"/>
                                         </svg>
                                     </span>
@@ -397,8 +397,8 @@ const Home = () => {
                         <h2 className="tp-home-contact-title mb-25 p-relative z-index-1">Let’s work with <span>together</span></h2>
                         <a href="/contact" className="tp-home-project-icon p-relative z-index-1">
                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                              <path d="M1 6.99854H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                              <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                            </svg>
                         </a>
                         <div className="tp-home-contact-slide pt-25">

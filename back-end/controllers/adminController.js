@@ -5,10 +5,10 @@ import adminData from '../modals/adminData.js'
 export const formDataCreate = async (req, res) => {
     try {
         
-        const { firstName, lastName, email, phone, message } = req.body;
+        const { firstName, lastName, email, phone, subject, message } = req.body;
 
        
-        const newAdmin = await adminData.create({ firstName, lastName, email, phone, message });
+        const newAdmin = await adminData.create({ firstName, lastName, email, phone, subject, message });
 
        
         res.status(201).json({

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { createContactData } from "./contactApi";
 
 // Initial state
 const initialState = {
@@ -14,8 +15,10 @@ const contactSlice = createSlice({
     initialState,
     reducers: {},
     extraReducers: (builder) => {
-        
-      },
+        builder.addCase(createContactData.fulfilled, (state, { payload }) => {
+            state.contacts.push(payload);
+        });
+    } 
 });
 
 // export selector

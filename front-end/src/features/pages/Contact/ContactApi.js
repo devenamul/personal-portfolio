@@ -8,6 +8,8 @@ export const createContactData = createAsyncThunk(
     "contact/createContactData",
     async (data) => {
       const response = await axios.post("http://localhost:5050/createData", data);
+      console.log(response);
+      
       return response.data;
     }
   );

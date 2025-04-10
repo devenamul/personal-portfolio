@@ -24,6 +24,12 @@ const adminSchema = mongoose.Schema({
         trim:true,
         unique:true 
     },
+    subject:{
+        type:String,
+        require:true,
+        trim:true,
+        
+    },
     message:{
         type:String,
         require:true,
