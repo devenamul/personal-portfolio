@@ -1,13 +1,31 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import './Home.css'
 
 
 const Home = () => {
+
+   useEffect(() => {
+
+      const $ = window.jQuery;
+  
+      // Initialize Swiper slider
+      const tp_service_slide = new Swiper(".tp-home-service-active", {
+          slidesPerView: 1,
+          speed: 700,
+          spaceBetween: 5,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+              el: ".tp-home-service-pagination",
+              clickable: true,
+          },
+      });
+  
+  }, []);
   return (
     <>
-      <div className="preloader med-loading">
-         <div className="loader"></div>
-      </div>
-    
-       
+  
       <main>
 
      
@@ -47,15 +65,15 @@ const Home = () => {
                   </div>
                   <div className="col-xl-5">
                      <div className="row gx-16">
-                        <div className="col-lg-7 col-md-7 mb-15">
-                        <div className="tp-home-project-wrap bg-position tp-round-10 h-100" style={{ backgroundImage: "url('/img/project/bg.jpg')" }}>
+                        <div className="col-lg-7 col-md-7 mb-15 ">
+                        <div className=" firstPage-portfolio tp-home-project-wrap bg-position tp-round-10 h-100" style={{ backgroundImage: "url('/img/project/bg.jpg')" }}>
                               <div className="tp-home-project-contect">
-                                 <a href="/portfolio" className="tp-home-project-icon mb-15">
+                                 <Link to="/portfolio" className="tp-home-project-icon mb-15 firstPage-portfolio-buton">
                                     <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M9.80005 1L16 7.00005L9.80005 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                        <path d="M1 6.99854H16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
-                                 </a>
+                                 </Link>
                                  <h2 className="tp-home-title fw-500 tp-text-common-white"><a className="underline-white" href="/portfolio">Portfolio</a></h2>
                               </div>
                            </div>

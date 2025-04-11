@@ -1,13 +1,4 @@
 
-.signIn-signUp-offcanvas-btn{
-    display: none !important;
- }
- @media (max-width:575px){
-    .signIn-signUp-offcanvas-btn{
-    display: block !important;
- }
- }
-
   .portfolio-post-top-heading{
     font-size: 3rem;
     letter-spacing: 0.02em;

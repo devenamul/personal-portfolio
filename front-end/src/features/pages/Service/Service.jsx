@@ -1,13 +1,11 @@
 import Footer from '../../compnent/Footer/Footer'
 import Header from '../../compnent/Header/Header'
-import Loader from '../../compnent/Loder/Loader'
 import './Service.css'
 
 const Service = () => {
   return (
     <>
           
-      <Loader/>
       <Header/>
 
       <main>

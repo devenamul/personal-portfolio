@@ -1,14 +1,14 @@
 
 import Footer from '../../compnent/Footer/Footer'
 import Header from '../../compnent/Header/Header'
-import Loader from '../../compnent/Loder/Loader'
+
 import './Blog.css'
 
 const Blog = () => {
   return (
     <>
        
-      <Loader/>
+     
       <Header/>
       <main>
         

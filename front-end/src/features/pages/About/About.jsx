@@ -1,17 +1,82 @@
 import './About.css'
 import Footer from '../../compnent/Footer/Footer'
 import Header from '../../compnent/Header/Header'
-import Loader from '../../compnent/Loder/Loader'
+
 
 
 
 
 import './About.css'
+import { useEffect } from 'react'
 const About = () => {
+
+   useEffect(() => {
+      const windowOn = $(window);
+  
+
+      // Custom background and width for elements
+      $("[data-background]").each(function () {
+        $(this).css("background-image", "url(" + $(this).attr("data-background") + ")");
+      });
+  
+      $("[data-width]").each(function () {
+        $(this).css("width", $(this).attr("data-width"));
+      });
+  
+      // Initialize Swiper for Home Service
+      const tpServiceSlide = new Swiper(".tp-home-service-active", {
+        slidesPerView: 1,
+        speed: 700,
+        spaceBetween: 5,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+          el: ".tp-home-service-pagination",
+          clickable: true,
+        },
+      });
+  
+      // Initialize Swiper for Testimonial Slider
+      const tpTestimonialSlide = new Swiper(".tp-testimonial-slider-active", {
+        slidesPerView: 1,
+        speed: 700,
+        spaceBetween: 24,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+        breakpoints: {
+          1400: { slidesPerView: 2 },
+          1200: { slidesPerView: 2 },
+          991: { slidesPerView: 2 },
+          576: { slidesPerView: 1 },
+          0: { slidesPerView: 1 },
+        },
+      });
+  
+      // Initialize Swiper for Portfolio Slider
+      const tpPortfolioSlide = new Swiper(".tp-portfolio-slider-active", {
+        slidesPerView: 1,
+        speed: 700,
+        spaceBetween: 40,
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+        breakpoints: {
+          1400: { slidesPerView: 2 },
+          1200: { slidesPerView: 2 },
+          991: { slidesPerView: 2 },
+          576: { slidesPerView: 1 },
+          0: { slidesPerView: 1 },
+        },
+      });
+  
+    }, []);
   return (
     <>
           
-      <Loader/>
+    
       <Header/>
 
       <main>

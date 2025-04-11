@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import './Portfolio.css'
-import Loader from '../../compnent/Loder/Loader';
 import Header from '../../compnent/Header/Header';
 import Footer from '../../compnent/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
 
@@ -35,7 +35,7 @@ const Portfolio = () => {
   return (
     <>
         
-     <Loader/>
+   
      <Header/>
 
       <main>
@@ -66,40 +66,40 @@ const Portfolio = () => {
             <div className="row" id="portfolio-container">
 
                <div className="col-md-4 mb-4 portfolio-item html-relation html show">
-                  <img src="/img/portfolio/item-1.jpg" className="img-fluid project-info-img" alt="HTML Project 1"/>
+                  <img src="/img/portfolio/html-css-js-1.png" className="img-fluid w-100 h-100 project-info-img" alt="HTML Project 1"/>
                 
                   <div className="html-absolute d-flex justify-content-center flex-column align-items-center">
-                    <h4 className="project-info-name text-center mt-2">HTML Project</h4>
-                    <a href="#" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</a>
-                    <a href="#" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</a>   
+                    <h4 className="project-info-name text-center mt-2">html css & js Project</h4>
+                    <Link target="_blank" to="https://portfolio2-mu-murex.vercel.app/" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</Link>
+                    <Link target="_blank" to="https://github.com/devenamul/portfolio2" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</Link>   
                   </div>
                 </div>
                 
                 
               <div className="col-md-4 mb-4 portfolio-item html-relation react show ">
-                <img src="/img/portfolio/item-2.jpg" className="img-fluid project-info-img" alt="React Project 1"/>
+                <img src="/img/portfolio/react-1.png" className=" w-100 h-100 img-fluid project-info-img" alt="React Project 1"/>
                 <div className="html-absolute d-flex justify-content-center flex-column align-items-center">
                   <h4 className="project-info-name text-center mt-2">React Project</h4>
-                  <a href="#" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</a>
-                  <a href="#" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</a>   
+                  <Link target="_blank" to="#" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</Link>
+                  <Link target="_blank" to="https://github.com/devenamul/personal-portfolio" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</Link>   
                 </div>
               </div>
 
               <div className="col-md-4 mb-4 portfolio-item node show html-relation">
-                <img src="/img/portfolio/item-3.jpg" className="img-fluid project-info-img" alt="Node Project 1"/>
+                <img src="/img/portfolio/nodejs-1.png" className=" w-100 h-100 img-fluid project-info-img" alt="Node Project 1"/>
                 <div className="html-absolute d-flex justify-content-center flex-column align-items-center">
                   <h4 className="project-info-name text-center mt-2">Node Project</h4>
-                  <a href="#" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</a>
-                  <a href="#" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</a>   
+                  <Link target='_blank' to="https://constractor-project.onrender.com/" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</Link>
+                  <Link target='_blank' to="https://github.com/devenamul/constractor-project" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</Link>   
                 </div>
               </div>
 
               <div className="col-md-4 mb-4 portfolio-item next show html-relation">
-                <img src="/img/portfolio/item-4.jpg" className="img-fluid project-info-img" alt="Next Project 1"/>
+                <img src="/img/portfolio/next-1.png" className="w-100 h-100 img-fluid project-info-img" alt="Next Project 1"/>
                 <div className="html-absolute d-flex justify-content-center flex-column align-items-center">
                   <h4 className="project-info-name text-center mt-2">Next Project</h4>
-                  <a href="#" className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</a>
-                  <a href="#" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</a>   
+                  <Link target="_blank" to="https://dashbord-sepia.vercel.app/"  className="project-info-preview portfolio-button d-block mt-2 text-decoration-none">Preview this project</Link>
+                  <Link target="_blank" to="https://github.com/devenamul/dashbord" className="project-info-githublink portfolio-button d-block mt-2 text-decoration-none">See gitHub link</Link>   
                 </div>
               </div>
             </div>

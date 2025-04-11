@@ -1,5 +1,88 @@
+import { useEffect, useState } from "react";
+import './Header.css'
+import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
+import Loader from "../Loder/Loader";
 
 const Header = () => {
+   useEffect(() => {
+      const checkAndRun = () => {
+        if (window.jQuery) {
+          const $ = window.jQuery;
+  
+          // Open offcanvas menu
+          $(".tp-offcanvas-open-btn").on("click", function () {
+            $(".tp-offcanvas-area").addClass("opened");
+            $(".body-overlay").addClass("opened");
+          });
+  
+          // Close offcanvas menu
+          $(".tp-offcanvas-close-btn, .body-overlay").on("click", function () {
+            $(".tp-offcanvas-area").removeClass("opened");
+            $(".body-overlay").removeClass("opened");
+          });
+  
+          //  Clear existing menu before appending new one to avoid duplicates
+          const tpSideMenu = $('.tp-offcanvas-menu nav');
+          tpSideMenu.empty(); //  This prevents duplicate menu items
+  
+          // Clone mobile menu and append
+          const tpMenuWrap = $('.tp-mobile-menu-active > ul').clone();
+          tpSideMenu.append(tpMenuWrap);
+  
+          // Add icon next to submenu items
+          if ($(tpSideMenu).find('.tp-submenu').length !== 0) {
+            $(tpSideMenu)
+              .find('.tp-submenu')
+              .parent()
+              .append('<button class="tp-menu-close"><i class="far fa-chevron-right"></i></button>');
+          }
+  
+          // Toggle submenu on button or link click
+          const sideMenuList = $('.tp-offcanvas-menu nav > ul > li button.tp-menu-close, .tp-offcanvas-menu nav > ul li.has-dropdown > a');
+          $(sideMenuList).on('click', function (e) {
+            e.preventDefault();
+            if (!$(this).parent().hasClass('active')) {
+              $(this).parent().addClass('active');
+              $(this).siblings('.tp-submenu').slideDown();
+            } else {
+              $(this).siblings('.tp-submenu').slideUp();
+              $(this).parent().removeClass('active');
+            }
+          });
+        } else {
+          // jQuery not yet loaded, retry after 100ms
+          setTimeout(checkAndRun, 100);
+        }
+      };
+  
+      checkAndRun();
+    }, []);
+
+    // handel register
+    const [loading, setLoading] = useState(false);
+    const handelSignIn = () => {
+      setLoading(true); // Loader শুরু
+  
+      setTimeout(() => {
+        setLoading(false); // Loader বন্ধ
+        Swal.fire({
+          title: 'This field only Admin',
+          icon: 'error',
+          showCancelButton: true,
+          confirmButtonText: 'OK',
+          cancelButtonText: 'Cancel',
+          showConfirmButton: false,
+          background: '#454545',
+          color: '#f27474',
+          customClass: {
+            popup: 'custom-swal-popup',
+            cancelButton: 'custom-cancel-button'
+          },
+        });
+      }, 1000); // 1 সেকেন্ড পরে Swal দেখাবে
+    };
+
   return (
     <>
         <div className="tp-offcanvas-area">
@@ -87,7 +170,7 @@ const Header = () => {
       </div>
       <div className="body-overlay"></div>
      
-
+      {loading && <Loader />}
       <header>
          <div className="tp-header-2-area">
             <div className="container">
@@ -102,20 +185,20 @@ const Header = () => {
                         <div className="tp-main-menu">
                            <nav className="tp-mobile-menu-active">
                               <ul>
-                                 <li className="/"><a href="/">Home</a></li>
-                                 <li><a href="/about">About</a></li>
-                                 <li><a href="/service">Service</a></li>
-                                 <li><a href="/blog">Blog</a></li>
-                                 <li><a href="/portfolio">Portfolio</a></li>
-                                 <li><a href="/contact">Contact</a></li>
-                                 <li className="signIn-signUp-offcanvas-btn"><a href="#">SignIn/SignUp</a></li>
+                                 <li className="/a"><Link to="/">Home</Link></li>
+                                 <li><Link to="/about">About</Link></li>
+                                 <li><Link to="/service">Service</Link></li>
+                                 <li><Link to="/blog">Blog</Link></li>
+                                 <li><Link to="/portfolio">Portfolio</Link></li>
+                                 <li><Link to="/contact">Contact</Link></li>
+                                 <li className="signIn-signUp-offcanvas-btn"><Link onClick={handelSignIn} to="">SignIn/SignUp</Link></li>
                               </ul>
                            </nav>
                         </div>
                      </div>
                      <div className="col-8 col-xl-4">
                         <div className="tp-header-btn text-end">
-                           <a className="tp-btn d-none d-sm-inline-block" href="/contact">SignIn/SignUp</a>
+                           <Link onClick={handelSignIn}  className="tp-btn d-none d-sm-inline-block" to="">SignIn/SignUp</Link>
                            <button className="tp-header-bar tp-offcanvas-open-btn d-xl-none ml-10">
                               <span>
                                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

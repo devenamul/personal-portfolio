@@ -1,14 +1,16 @@
-import React from 'react'
+// src/components/Loader.jsx
+import { PacmanLoader } from 'react-spinners';
 
 const Loader = () => {
   return (
-    <>
-      <div className="preloader med-loading">
-         <div className="loader"></div>
-      </div>
-      
-    </>
-  )
-}
+    <div style={{
+      position: 'fixed', top: 0, left: 0, width: '100%', height: '100%',
+      display: 'flex', justifyContent: 'center', alignItems: 'center',
+      backgroundColor: "#121212", zIndex: 9999
+    }}>
+      <PacmanLoader size={40} color="#6de75b" />
+    </div>
+  );
+};
 
-export default Loader
+export default Loader;

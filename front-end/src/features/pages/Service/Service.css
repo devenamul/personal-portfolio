@@ -1,8 +1,0 @@
-.signIn-signUp-offcanvas-btn{
-    display: none !important;
- }
- @media (max-width:575px){
-    .signIn-signUp-offcanvas-btn{
-    display: block !important;
- }
- }

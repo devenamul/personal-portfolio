@@ -1,17 +1,18 @@
 import { useState } from "react"
 import Footer from "../../compnent/Footer/Footer"
 import Header from "../../compnent/Header/Header"
-import Loader from "../../compnent/Loder/Loader"
 import "./Contact.css"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch} from "react-redux"
 import { createContactData } from "./contactApi"
-import { getAllContactData } from "./ContactSlice"
+
+import Swal from 'sweetalert2';
+
 const Contact = () => {
   
      // dispatch data
      const dispatch = useDispatch()
-    // get selector data
-    const {contacts, message} = useSelector(getAllContactData)  
+  
+ 
  
    // useState for input data
     const [input, setInput]= useState({
@@ -31,16 +32,67 @@ const Contact = () => {
      }));
     }
 
-    // submit form data data
-    const handleContactCreate =(e)=>{
-      e.preventDefault();
-      dispatch(createContactData(input))
-    }
+    // submit form data
+const handleContactCreate = (e) => {
+   e.preventDefault();
+ 
+   // form data validation
+   if (
+     input.firstName === "" || 
+     input.lastName === "" || 
+     input.email === "" || 
+     input.phone === "" || 
+     input.subject === "" || 
+     input.message === ""
+   ) {
+      Swal.fire({
+         title: 'All field are Required',
+         icon: 'error',
+         showCancelButton: true,
+         confirmButtonText: 'OK',
+         cancelButtonText: 'Cancel',
+         showConfirmButton: false,
+         background: '#454545',
+         color: '#f27474', 
+         customClass: {
+           popup: 'custom-swal-popup',
+           cancelButton: 'custom-cancel-button'
+         },
+        
+       });
+       
+       
+   } else {
+     dispatch(createContactData(input));
+     Swal.fire({
+      icon: "success",
+      title: "Successful send your data",
+      showConfirmButton: false,
+      background: '#454545',
+      color: '#6de767',
+      customClass: {
+        popup: 'custom-swal-popup',
+      },
+      timer: 1500 
+    })
+
+    setInput({
+      firstName:"", 
+      lastName:"", 
+      email:"", 
+      phone:"", 
+      subject:'',
+      message:"" 
+    })
+    
+   }
+ };
+ 
 
   return (
     <>
            
-      <Loader/>
+   
       <Header/>
       
       <main className="p-relative tp-home-svg-wrap z-index-1">
@@ -147,7 +199,7 @@ const Contact = () => {
                                  </div>
                                  <div className="col-md-6">
                                     <div className="mb-15">
-                                       <input name="email" value={input.email} onChange={handelInputChange} className="input" type="email" placeholder="heiko@mail.com"/>
+                                       <input name="email" value={input.email} onChange={handelInputChange} className="input" type="email" placeholder="engenamul2@mail.com"/>
                                     </div>
                                  </div>
                                  <div className="col-md-6">
